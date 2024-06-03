@@ -1,0 +1,28 @@
+@import '../utils/_variables.scss';
+@import '../utils/_mixins.scss';
+.nav-header {
+    @include flex-end;
+    text-transform: uppercase;
+  
+    @include respond-to(medium)  {
+      text-transform: none;
+    }
+  
+     &__nav-link-home,
+     &__nav-link-about {
+      @include font-right(12px);
+      color: $footer-color;
+      text-decoration: none;
+      padding-left: 0.8rem;
+  
+      @include respond-to(medium) {
+        @include font-right(24px);
+        padding-left: 3.5rem;
+      }
+  
+      &:hover,
+      &:focus {
+        text-decoration-line: underline;
+      }
+    }
+  }
