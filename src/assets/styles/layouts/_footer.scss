@@ -1,8 +1,7 @@
 .footer {
     
    
-  padding-right: 200px;
-  margin-left: -100px;
+
  
     
     @extend %flex-center;
@@ -12,19 +11,18 @@
    
     flex-direction: column;
     &__logo {
-      margin-bottom: 2%;
+      // margin-bottom: 2%;
       width: 122px;
       height: 40px;
       
    
-    padding-left:200px;
+    // padding-left:200px;
     }
     &__text-copyright {
       @include font(12px, 500);
       @extend %flex-end;
       color: $tertiary-color;
       width: 100%;
-      padding-left:200px;
       @include respond-to(medium){
         @include font(24px, 500);
       }

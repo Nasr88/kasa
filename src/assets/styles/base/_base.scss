@@ -1,13 +1,13 @@
 @import "../utils/_mixins.scss";
 body {
     padding-top: 20px;
-    padding-right: 20px;
+    // padding-right: 20px;
     padding-bottom: 0; // No padding bottom to avoid affecting footer
-    padding-left: 20px;
+    // padding-left: 20px;
     @include respond-to(medium) {
       padding-top: 45px;
-      padding-right: 100px;
-      padding-left: 100px;
+    //   padding-right: 100px;
+    //   padding-left: 100px;
     }
 
     font-family: 'Montserrat', sans-serif;

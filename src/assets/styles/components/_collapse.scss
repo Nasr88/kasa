@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .collapse {
+    display: flex;
+    width: 100%;
+    margin: 19px 0;
+    justify-content: center;
+    align-items: center;
+    @include respond-to(medium) {
+      margin: 38px 0;
+    }
+  
+    &__dropdown {
+      width: 100%;
+  
+      @include respond-to(medium) {
+        width: 75%;
+      }
+      &__container{
+        display:flex;
+        flex-direction: column;
+       
+        padding: 0.5em 1em;
+        @extend %flex-between;
+        margin: 0 auto;
+       
+        border-radius: 5px;
+      &__Trigger{
+        display: flex;
+        justify-content: space-between;
+        background-color: $primary-color;
+        padding: 0.5em 1em;
+        width: 100%;
+        border-radius: 5px;
+        &__title{
+          color: $tertiary-color;
+          @include font(24px, 500);
+          height: 30px;
+          color: $tertiary-color;
+          display: flex;
+          align-items: center;
+          @include font(13px, 700);
+            @include respond-to(medium) {
+              width: 100%;
+              height: 54px;
+              display: flex;
+              align-items: center;
+              @include font(24px, 700);
+            }
+          
+          
+      }}
+        &__content {
+            background-color: $secondary-color;
+            width: 100%;
+            border-radius: 5px;
+            color: $footer-color;
+            @include font(16px, 400);
+           
+            line-height: 142.6%;
+            margin: 0 auto;
+            padding: .8em;
+
+  
+          @include respond-to(medium) {
+            width: 100%;
+            @include font(20px, 400);
+          }
+        }
+  
+       
+      }
+    }
+  }
+
+  
+  .chevron {
+    cursor: pointer;
+    color: $tertiary-color;
+    margin-top:8px;
+    @include respond-to(medium) {
+      margin-top:20px;
+    }
+  }
+  

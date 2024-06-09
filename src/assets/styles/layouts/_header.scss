@@ -1,5 +1,6 @@
 @import "../utils/_mixins.scss";
 .header {
+    @include bordurePage;
     display: flex;
     justify-content: space-between;
     align-items: center;

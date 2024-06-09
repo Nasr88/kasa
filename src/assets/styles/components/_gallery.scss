@@ -1,6 +1,6 @@
 @import "../utils/_mixins.scss";
 .home_gallery {
-     
+    @include bordurePage;
     @include respond-to(medium) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -18,6 +18,9 @@
       padding: 50px;
       border-radius: 25px;
       margin-bottom: 40px;
+      margin-right:100px;
+      margin-left: 100px;
+      
     }
     @include respond-to(xlarge) {
       row-gap: 40px;
