@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Slider = ({images}) => {
     const [indexTab, setindexTab] = useState(0)//j'ai définit l'état initial
@@ -11,9 +13,15 @@ const Slider = ({images}) => {
     return (
         <>
             <img src={images[indexTab]} alt=""></img>
-            <button className="" onClick={NextPicture}>Next</button>
-            <button className="" onClick={PreviousPicture}>Previous</button>
+            {images.length > 1 && (
+                <>
+                <FontAwesomeIcon icon={faChevronLeft} className="nav-icon left" onClick={PreviousPicture} />
+                <FontAwesomeIcon icon={faChevronRight} className="nav-icon right" onClick={NextPicture} />
+                <div className="numbering">{indexTab + 1}/{images.length}</div>
+                </>
+            )}
         </>
+            
         
     )}
   

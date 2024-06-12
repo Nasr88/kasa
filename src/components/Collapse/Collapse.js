@@ -12,7 +12,7 @@ return(
       </div>
       <FontAwesomeIcon  
         className="chevron" 
-        icon={isOpen ? faChevronUp : faChevronDown} 
+        icon={isOpen ? faChevronDown : faChevronUp} 
         onClick={()=>{setIsOpen(!isOpen)}}>
       </FontAwesomeIcon>
     </div>
