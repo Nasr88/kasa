@@ -30,10 +30,12 @@
       &__Trigger{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         background-color: $primary-color;
         padding: 0.5em 1em;
         width: 100%;
         border-radius: 5px;
+        height: 54px;
         &__title{
           color: $tertiary-color;
           @include font(24px, 500);
@@ -79,9 +81,7 @@
   .chevron {
     cursor: pointer;
     color: $tertiary-color;
-    margin-top:8px;
-    @include respond-to(medium) {
-      margin-top:20px;
-    }
+    
+   
   }
   

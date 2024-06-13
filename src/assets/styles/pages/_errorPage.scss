@@ -1,0 +1,40 @@
+.errorContainer{
+    color: $primary-color;
+    @extend %flex-column;
+    margin: 22px 22px;
+    &__Number {
+      @include flex-center;
+  
+      @include font(96px, 700);
+      margin-top:113px;
+  
+     @include respond-to(medium) {
+        @include font(288px, 700);
+        margin-top: 139px;
+      }
+    }
+    &__Text {
+      @extend %flex-end;
+      text-align: center;
+      @include font(18px, 500);
+      
+  
+      @include respond-to(medium) {
+        @include font(36px, 500);
+      }
+    }
+    &__Link {
+      @extend %flex-center;
+      color: $footer-color;
+      @include font(14px, 500);
+      margin-top: 113px;
+      margin-bottom: 113px;
+      @include respond-to(medium) {
+        @include font(18px, 500);
+        margin-top: 139px;
+        margin-bottom: 139px;
+      }
+  
+     
+    }
+  }

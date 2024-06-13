@@ -1,5 +1,5 @@
 .Fiche-logement {
-    @include bordurePage;
+   
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -7,7 +7,13 @@
     padding-bottom: 50px;
   }
   .description-info {
-    @include flex-column;
+    @include bordurePage;
+     justify-content: center;
+     @include respond-to(medium) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
     &__titletags {
       @include flex-column;
   
@@ -18,7 +24,7 @@
           @include font(18px, 500);
           color:$primary-color;
           @include respond-to(medium) {
-            @include font(51px, 500);
+            @include font(36px, 500);
           }
         }
         .endroit-logement {
@@ -32,7 +38,49 @@
           flex-wrap: wrap;
           align-items: baseline;
         }
-      }}
+      }
+     
+       
+      
+    
+      &__proprietaire {
+        @extend %flex-rowReverse;
+    
+        @include respond-to(medium) {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        &__nom-prop {
+          @extend %flex-rowCenter;
+          .nom-proprietaire {
+            color:$primary-color;
+            @include font(12px, 500);
+            margin-right: 10px;
+            text-align: right;
+            width: 93px;
+            @include respond-to(medium){
+              @include font(18px, 500);
+            }
+          }
+          .photo-proprietaire {
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            object-fit: cover;
+          }
+        }
+        &__rate {
+          margin-top: 20px;
+          margin-right: -80px;
+        }
+       
+
+       
+      }
+    }
+    
       .tag-container {
         display: flex;
         &__txt {
@@ -57,17 +105,45 @@
         }
       }
       .description-equipments{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top:24px;
-        margin-left:-16px;
-        margin-right:-16px;
+       @include bordurePage;
+        @include flex-column;
+        @include respond-to(medium)  {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-top:24px;
+          
+        }
         &__description{
-          padding-right: 40px;
-          width: 50%;
+          width:100%;
+          @include respond-to(medium){
+            padding-right: 40px;
+            width: 50%;
+            .h2{
+              @include font(18px, 700);
+            }
+          }
+          
         }
         &__equipments{
+          width:100%;
+          @include respond-to(medium)  {
           width:50%;
+          }
         }
+      }
+
+      .collapse__dropdown__container{
+        margin-left: -16px;
+        margin-right: -16px;
+      &__Trigger{
+        height: 52px;
+        &__title{
+          @include font(13px,700);
+          
+          @include respond-to(medium){
+            @include font(18px,700);
+          }
+        }
+      }
       }

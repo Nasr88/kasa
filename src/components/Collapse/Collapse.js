@@ -8,7 +8,7 @@ return(
    <div className="collapse__dropdown__container">
     <div className="collapse__dropdown__container__Trigger"> 
         <div className="collapse__dropdown__container__Trigger__title">
-        <h2>{title}</h2>
+        {title}
       </div>
       <FontAwesomeIcon  
         className="chevron" 
