@@ -24,9 +24,9 @@ const Logement =() =>{
 });
  
 
-    if (!logement) {
-        return <p>Logement non trouvé</p>;
-      }
+    // if (!logement) {
+    //     return <p>Logement non trouvé</p>;
+    //   }
 
     return(
         <>
