@@ -2,7 +2,7 @@
   "name": "kasa",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://<your-username>.github.io/<repository-name>",
+  "homepage": "https://nasr88.github.io/kasa",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-regular-svg-icons": "^6.5.2",
