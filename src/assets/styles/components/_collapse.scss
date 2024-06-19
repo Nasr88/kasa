@@ -8,6 +8,7 @@
     margin: 19px 0;
     justify-content: center;
     align-items: center;
+    @include bordurePage;
     @include respond-to(medium) {
       margin: 38px 0;
     }

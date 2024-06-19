@@ -11,7 +11,7 @@ import Host from "../../components/host/Host";
 import Rate from "../../components/rate/Rate"
 
 const Logement =() =>{
-    const { id } = useParams();
+    const { id } = useParams();// Extraire le paramètre id de l'URL
     const logement = logements.find((logement) => logement.id === id);
 
 /* Équipements */
@@ -33,7 +33,6 @@ const Logement =() =>{
             <Header />
             <div className="image-container">
                 <Slider images={logement.pictures}></Slider>
-                
             </div>
             <section className="Fiche-logement">
             <div className="description-info">

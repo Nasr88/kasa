@@ -18,9 +18,7 @@ const Rate = ({ rating }) => {
         icon={index < rating ? fullStar : emptyStar}
         
       />
-   
-      
-   
+
     );
   });
 
