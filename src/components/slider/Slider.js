@@ -3,7 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Slider = ({images}) => {
-    const [indexTab, setindexTab] = useState(0)//j'ai définit l'état initial
+    //state(état, données)
+    //je définit un state que je l'initialise à 0 que je le récupère dans une variable indexTab et que je ne peux le modifier qu'avec setindexTab
+    const [indexTab, setindexTab] = useState(0)
+    // Si indexTab est égal à l'index de la dernière image (images.length - 1), il est réinitialisé à 0 pour boucler au début.
     const NextPicture = ()=>{
       indexTab === images.length - 1 ? setindexTab (0) : setindexTab(indexTab+1)  
     }

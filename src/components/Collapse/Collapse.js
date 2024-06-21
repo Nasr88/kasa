@@ -15,7 +15,7 @@ const Collapse = ({title, description}) =>{
             {title}
           </div>
           <FontAwesomeIcon  
-            className="chevron" 
+             className={`chevron ${isOpen ? 'open' : ''}`}
             icon={isOpen ? faChevronDown : faChevronUp} 
             onClick={()=>{setIsOpen(!isOpen)}}>
           </FontAwesomeIcon>

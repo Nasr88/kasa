@@ -82,7 +82,10 @@
   .chevron {
     cursor: pointer;
     color: $tertiary-color;
-    
+    transition: transform 0.3s ease-in-out;
    
   }
   
+  .chevron.open {
+    transform: rotate(180deg);
+  }
